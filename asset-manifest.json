@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/portfolio_vincci/static/css/main.f855e6bc.css",
-    "main.js": "/portfolio_vincci/static/js/main.d1ad0c81.js",
+    "main.js": "/portfolio_vincci/static/js/main.e3e248cc.js",
     "static/js/787.c55193bc.chunk.js": "/portfolio_vincci/static/js/787.c55193bc.chunk.js",
     "static/media/logo.svg": "/portfolio_vincci/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portfolio_vincci/index.html",
     "main.f855e6bc.css.map": "/portfolio_vincci/static/css/main.f855e6bc.css.map",
-    "main.d1ad0c81.js.map": "/portfolio_vincci/static/js/main.d1ad0c81.js.map",
+    "main.e3e248cc.js.map": "/portfolio_vincci/static/js/main.e3e248cc.js.map",
     "787.c55193bc.chunk.js.map": "/portfolio_vincci/static/js/787.c55193bc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.d1ad0c81.js"
+    "static/js/main.e3e248cc.js"
   ]
 }
