@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio_vincci/static/css/main.f855e6bc.css",
-    "main.js": "/portfolio_vincci/static/js/main.1acd1d11.js",
+    "main.css": "/portfolio_vincci/static/css/main.bdc1d15e.css",
+    "main.js": "/portfolio_vincci/static/js/main.10150001.js",
+    "static/media/Vincci.JPEG": "/portfolio_vincci/static/media/Vincci.281b006b5121724a655e.JPEG",
     "index.html": "/portfolio_vincci/index.html",
-    "main.f855e6bc.css.map": "/portfolio_vincci/static/css/main.f855e6bc.css.map",
-    "main.1acd1d11.js.map": "/portfolio_vincci/static/js/main.1acd1d11.js.map"
+    "main.bdc1d15e.css.map": "/portfolio_vincci/static/css/main.bdc1d15e.css.map",
+    "main.10150001.js.map": "/portfolio_vincci/static/js/main.10150001.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.1acd1d11.js"
+    "static/css/main.bdc1d15e.css",
+    "static/js/main.10150001.js"
   ]
 }
