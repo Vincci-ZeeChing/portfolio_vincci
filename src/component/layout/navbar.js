@@ -1,18 +1,17 @@
 import React from 'react';
 import './navbar.css';
-import { NavLink } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({ navigateTo }) => {
     return (
         <div className="navbar">
             <div className="logo">Portfolio</div>
             <div className="nav-links">
-                <div className="menu-container">
-                    <NavLink to="/homepage" className="nav-link" activeClassName="active-link">Home</NavLink>
-                    <NavLink to="/about" className="nav-link" activeClassName="active-link">About</NavLink>
-                    <NavLink to="/skill" className="nav-link" activeClassName="active-link">Skills</NavLink>
-                    <NavLink to="/services" className="nav-link" activeClassName="active-link">Services</NavLink>
-                    <NavLink to="/contact" className="nav-link" activeClassName="active-link">Contact</NavLink>
+                <div className="menu-container" style={{ display: 'flex', flexDirection: 'row' }}>
+                    <div onClick={() => navigateTo('/')} className="nav-link">Home</div>
+                    <div onClick={() => navigateTo('/about')} className="nav-link">About</div>
+                    <div onClick={() => navigateTo('/skill')} className="nav-link">Skills</div>
+                    <div onClick={() => navigateTo('/services')} className="nav-link">Services</div>
+                    <div onClick={() => navigateTo('/contact')} className="nav-link">Contact</div>
                 </div>
             </div>
         </div>
