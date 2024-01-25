@@ -1,0 +1,19 @@
+/* Homepage.css */
+
+.full-width {
+    display: flex;
+}
+
+.name {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.name.focus {
+    font-size: 2em;
+    color: #388087; /* Your desired color for focus */
+}
+
+.title {
+    font-size: 1.2em;
+}
