@@ -3,7 +3,11 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      Vincci Portfolio
+      <header className="App-header">
+        <p>
+          Hello, Vincci here! I'm learning React.
+        </p>
+      </header>
     </div>
   );
 }
