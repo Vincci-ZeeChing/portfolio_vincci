@@ -8,7 +8,7 @@ const Layout = ({children}) => {
         <React.Fragment>
             {/*<Navbar/>*/}
             <main>
-                <div style={{ marginTop: "1vh", marginRight: "2vw", marginLeft: "2vw", marginBottom: "3vh", minHeight: "85vh", backgroundColor: '#F6F6F2', padding: "3vh" }}>
+                <div style={{ marginTop: "1vh", marginRight: "2vw", marginLeft: "2vw", marginBottom: "3vh", minHeight: "85vh", backgroundColor: 'white', padding: "3vh" }}>
                     {children}
                 </div>
             </main>
