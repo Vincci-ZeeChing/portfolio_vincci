@@ -1,12 +1,13 @@
 import React from 'react';
 import './navbar.css';
+import Logo from '../../component/image/Logo192.png'; // Use a different name if necessary
 
 const Navbar = ({ navigateTo }) => {
     return (
         <div className="navbar">
-            <div className="logo">Portfolio</div>
+            <img src={Logo} alt="Logo" className="logo"/>
             <div className="nav-links">
-                <div className="menu-container" style={{ display: 'flex', flexDirection: 'row' }}>
+                <div className="navbar">
                     <div onClick={() => navigateTo('/')} className="nav-link">Home</div>
                     <div onClick={() => navigateTo('/about')} className="nav-link">About</div>
                     <div onClick={() => navigateTo('/skill')} className="nav-link">Skills</div>
