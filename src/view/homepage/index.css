@@ -66,3 +66,19 @@
     margin-bottom: 10px;
 }
 
+.about-button {
+background-color: #398c93;
+    margin-top: 3vh;
+    border-radius: 50px;
+    border: none;
+    padding: 20px 30px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+。contact-icon {
+    font-size: 50px;
+    margin-right: 10px;
+    
+}

@@ -1,3 +1,4 @@
+// App.js
 import React, { useState } from 'react';
 import './App.css';
 import Navbar from './component/layout/navbar';
@@ -19,7 +20,7 @@ function App() {
         <Router>
             <div className="App">
                 <Navbar navigateTo={navigateTo} />
-                {route === '/' && <Homepage />}
+                {route === '/' && <Homepage navigateTo={navigateTo} />}
                 {route === '/about' && <About />}
                 {route === '/skill' && <Skill />}
                 {route === '/services' && <Services />}

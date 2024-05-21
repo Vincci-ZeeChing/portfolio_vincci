@@ -6,6 +6,7 @@ const Navbar = ({ navigateTo }) => {
     return (
         <div className="navbar">
             <img src={Logo} alt="Logo" className="logo"/>
+            {/* <div>Portfolio</div> */}
             <div className="nav-links">
                 <div className="navbar">
                     <div onClick={() => navigateTo('/')} className="nav-link">Home</div>
