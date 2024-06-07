@@ -4,9 +4,9 @@ import Layout from '../layout';
 import './index.css'; // Import the CSS file
 import VincciImage from '../../component/image/Vincci.png'; // Use a different name if necessary
 // import { IoMdInformationCircleOutline } from "react-icons/io";
-import { AiOutlineLinkedin } from "react-icons/ai";
+import { AiOutlineLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 
-const Homepage = ({ navigateTo }) => {
+const Homepage = () => {
     return (
         <Layout>
             <div className="full-width"> {/* Apply the full-width class */}
@@ -15,8 +15,18 @@ const Homepage = ({ navigateTo }) => {
                         <p className="name">Hey, I am</p>
                         <h1 className="name focus">Vincci Chye</h1>
                         <p className="title">Front End Developers</p>
-                        <AiOutlineLinkedin className="contact-icon"  />
-
+                        <a href="https://www.linkedin.com/in/vincci-zee-ching/" target="_blank"
+                           rel="noopener noreferrer">
+                            <AiOutlineLinkedin className="contact-icon"/>
+                        </a>
+                        <a href="https://github.com/Vincci-ZeeChing" target="_blank"
+                           rel="noopener noreferrer">
+                            <AiFillGithub className="contact-icon"/>
+                        </a>
+                        <a href="mailto:vincci-zeeching@outlook.com" target="_blank"
+                           rel="noopener noreferrer">
+                            <AiFillMail className="contact-icon"/>
+                        </a>
                         {/* <button onClick={() => navigateTo('/about')} className="about-button">About Me <IoMdInformationCircleOutline /></button> */}
                     </div>
 
