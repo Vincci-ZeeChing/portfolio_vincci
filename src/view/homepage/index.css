@@ -1,9 +1,38 @@
-/* Homepage.css */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 .full-width {
     width: 90vw; /* Make sure the container spans the entire viewport width */
     display: flex;
-    justify-content: flex-start; /* Align items to the start */
+    justify-content: center; /* Center the content horizontally */
 }
 
 .content-container {
@@ -12,12 +41,14 @@
     padding: 10px; /* Add padding */
     width: 100%; /* Ensure content container spans full width */
     flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
 }
 
 .text-container {
     text-align: left;
     flex: 1;
     margin-bottom: 10px; /* Reduce the bottom margin between text and image container */
+    animation: slideInFromLeft 1s ease-in-out; /* Apply slide-in-from-left animation */
 }
 
 .image-container {
@@ -26,16 +57,26 @@
     max-width: 100%;
     margin-bottom: 10px; /* Reduce the bottom margin between text and image container */
     text-align: center;
+    animation: slideInFromRight 1s ease-in-out; /* Apply slide-in-from-right animation */
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 .image {
-    width: 110%; /* Make sure the image spans the entire width of the container */
+    margin-top: 4vh;
+    width: 100%; /* Adjust the width to make sure it fits well */
     height: auto; /* Ensure the image maintains its aspect ratio */
+    transition: transform 0.5s ease-in-out; /* Add transition for smooth effect */
+}
+
+.image:hover {
+    transform: scale(1.05); /* Slightly zoom the image on hover */
 }
 
 @media (min-width: 768px) {
     .image-container {
-        justify-items: center;
+        justify-content: center; /* Center the content horizontally */
         flex-basis: auto; /* Revert width to auto for larger screens */
         max-width: 500px; /* Set maximum width for the image */
         margin-left: 20px; /* Add some space between text and image */
@@ -67,7 +108,7 @@
 }
 
 .about-button {
-background-color: #398c93;
+    background-color: #398c93;
     margin-top: 3vh;
     border-radius: 50px;
     border: none;
@@ -75,11 +116,18 @@ background-color: #398c93;
     font-size: 16px;
     color: white;
     text-decoration: none;
+    width: 6vw;
+    text-align: center;
 }
 
 .contact-icon {
     font-size: 30px;
     margin-right: 2vh;
     color: black;
-    /*margin: 2vh;*/
+    transition: transform 0.3s, color 0.3s; /* Add transition for smooth effect */
+}
+
+.contact-icon:hover {
+    transform: scale(1.2); /* Scale the icon on hover */
+    color: #398c93; /* Change the color on hover */
 }
